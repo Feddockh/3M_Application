@@ -1,0 +1,4 @@
+/home/feddockh/codingProjects/3M_Application/build/CMakeFiles/rebuild_cache.dir
+/home/feddockh/codingProjects/3M_Application/build/CMakeFiles/edit_cache.dir
+/home/feddockh/codingProjects/3M_Application/build/CMakeFiles/test.dir
+/home/feddockh/codingProjects/3M_Application/build/CMakeFiles/Modal-tests.dir
