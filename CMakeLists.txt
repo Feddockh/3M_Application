@@ -9,7 +9,7 @@ set(SOURCE_MAIN Modal.hpp Modal.cpp)
 
 # create unittests
 add_executable(Modal-tests catch.hpp ${SOURCE})
-# add_executable(FindPalindrome-main FindPalindrome_main.cpp ${SOURCE_MAIN})
+add_executable(Modal-main.exe Modal_main.cpp ${SOURCE_MAIN})
 
 enable_testing()
 

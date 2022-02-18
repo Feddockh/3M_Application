@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Modal-main.exe.dir/Modal_main.cpp.o CMakeFiles/Modal-main.exe.dir/Modal.cpp.o  -o Modal-main.exe 

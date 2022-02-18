@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/feddockh/codingProjects/3M_Application/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/Modal-main.exe.dir/all
 all: CMakeFiles/Modal-tests.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/Modal-main.exe.dir/clean
 clean: CMakeFiles/Modal-tests.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Modal-main.exe.dir
+
+# All Build rule for target.
+CMakeFiles/Modal-main.exe.dir/all:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/depend
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/feddockh/codingProjects/3M_Application/build/CMakeFiles --progress-num=1,2,3 "Built target Modal-main.exe"
+.PHONY : CMakeFiles/Modal-main.exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Modal-main.exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/feddockh/codingProjects/3M_Application/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Modal-main.exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/feddockh/codingProjects/3M_Application/build/CMakeFiles 0
+.PHONY : CMakeFiles/Modal-main.exe.dir/rule
+
+# Convenience name for target.
+Modal-main.exe: CMakeFiles/Modal-main.exe.dir/rule
+
+.PHONY : Modal-main.exe
+
+# clean rule for target.
+CMakeFiles/Modal-main.exe.dir/clean:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/clean
+.PHONY : CMakeFiles/Modal-main.exe.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Modal-tests.dir
@@ -74,7 +103,7 @@ clean: CMakeFiles/Modal-tests.dir/clean
 CMakeFiles/Modal-tests.dir/all:
 	$(MAKE) -f CMakeFiles/Modal-tests.dir/build.make CMakeFiles/Modal-tests.dir/depend
 	$(MAKE) -f CMakeFiles/Modal-tests.dir/build.make CMakeFiles/Modal-tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/feddockh/codingProjects/3M_Application/build/CMakeFiles --progress-num=1,2,3 "Built target Modal-tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/feddockh/codingProjects/3M_Application/build/CMakeFiles --progress-num=4,5,6 "Built target Modal-tests"
 .PHONY : CMakeFiles/Modal-tests.dir/all
 
 # Build rule for subdir invocation for target.

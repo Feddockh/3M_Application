@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Modal-main.exe
+
+# Build rule for target.
+Modal-main.exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Modal-main.exe
+.PHONY : Modal-main.exe
+
+# fast build rule for target.
+Modal-main.exe/fast:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/build
+.PHONY : Modal-main.exe/fast
+
+#=============================================================================
 # Target rules for targets named Modal-tests
 
 # Build rule for target.
@@ -140,6 +153,7 @@ Modal.o: Modal.cpp.o
 
 # target to build an object file
 Modal.cpp.o:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/Modal.cpp.o
 	$(MAKE) -f CMakeFiles/Modal-tests.dir/build.make CMakeFiles/Modal-tests.dir/Modal.cpp.o
 .PHONY : Modal.cpp.o
 
@@ -149,6 +163,7 @@ Modal.i: Modal.cpp.i
 
 # target to preprocess a source file
 Modal.cpp.i:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/Modal.cpp.i
 	$(MAKE) -f CMakeFiles/Modal-tests.dir/build.make CMakeFiles/Modal-tests.dir/Modal.cpp.i
 .PHONY : Modal.cpp.i
 
@@ -158,8 +173,36 @@ Modal.s: Modal.cpp.s
 
 # target to generate assembly for a file
 Modal.cpp.s:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/Modal.cpp.s
 	$(MAKE) -f CMakeFiles/Modal-tests.dir/build.make CMakeFiles/Modal-tests.dir/Modal.cpp.s
 .PHONY : Modal.cpp.s
+
+Modal_main.o: Modal_main.cpp.o
+
+.PHONY : Modal_main.o
+
+# target to build an object file
+Modal_main.cpp.o:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/Modal_main.cpp.o
+.PHONY : Modal_main.cpp.o
+
+Modal_main.i: Modal_main.cpp.i
+
+.PHONY : Modal_main.i
+
+# target to preprocess a source file
+Modal_main.cpp.i:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/Modal_main.cpp.i
+.PHONY : Modal_main.cpp.i
+
+Modal_main.s: Modal_main.cpp.s
+
+.PHONY : Modal_main.s
+
+# target to generate assembly for a file
+Modal_main.cpp.s:
+	$(MAKE) -f CMakeFiles/Modal-main.exe.dir/build.make CMakeFiles/Modal-main.exe.dir/Modal_main.cpp.s
+.PHONY : Modal_main.cpp.s
 
 Modal_test.o: Modal_test.cpp.o
 
@@ -197,10 +240,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... Modal-main.exe"
 	@echo "... Modal-tests"
 	@echo "... Modal.o"
 	@echo "... Modal.i"
 	@echo "... Modal.s"
+	@echo "... Modal_main.o"
+	@echo "... Modal_main.i"
+	@echo "... Modal_main.s"
 	@echo "... Modal_test.o"
 	@echo "... Modal_test.i"
 	@echo "... Modal_test.s"

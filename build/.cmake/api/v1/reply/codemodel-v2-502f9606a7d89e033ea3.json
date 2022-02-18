@@ -14,7 +14,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -29,12 +30,20 @@
 					"name" : "P1",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Modal-main.exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Modal-main.exe-Debug-ec90a7a85bc152881391.json",
+					"name" : "Modal-main.exe",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Modal-tests::@6890427a1f51a3e7e1df",

@@ -1,6 +1,16 @@
 [
 {
   "directory": "/home/feddockh/codingProjects/3M_Application/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++11 -o CMakeFiles/Modal-main.exe.dir/Modal_main.cpp.o -c /home/feddockh/codingProjects/3M_Application/Modal_main.cpp",
+  "file": "/home/feddockh/codingProjects/3M_Application/Modal_main.cpp"
+},
+{
+  "directory": "/home/feddockh/codingProjects/3M_Application/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++11 -o CMakeFiles/Modal-main.exe.dir/Modal.cpp.o -c /home/feddockh/codingProjects/3M_Application/Modal.cpp",
+  "file": "/home/feddockh/codingProjects/3M_Application/Modal.cpp"
+},
+{
+  "directory": "/home/feddockh/codingProjects/3M_Application/build",
   "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++11 -o CMakeFiles/Modal-tests.dir/Modal.cpp.o -c /home/feddockh/codingProjects/3M_Application/Modal.cpp",
   "file": "/home/feddockh/codingProjects/3M_Application/Modal.cpp"
 },
