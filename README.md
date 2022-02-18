@@ -47,3 +47,10 @@ Submissions should contain:
     Since the sizes of both arrays are not dependent on each other, they would be added, not multiplied (2n). 
     I believe that in big-O notation, the coefficient should drop off and it should be 0(n).
 
+Reasources I used:
+https://www.cplusplus.com/reference/vector/vector/ - Used to recall functions from the vector class
+https://stackoverflow.com/questions/19894686/getting-size-of-array-from-pointer-c - Used to discover that arrays turn 
+    into pointers in C++ function calls
+https://www.youtube.com/watch?v=bNjMFtHLioA - I watched this video to understand big-O notation for space
+I also used the catch file I had been using in my class as well as the framework for the CMakeList.
+
